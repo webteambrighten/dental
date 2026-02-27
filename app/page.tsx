@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 type Props = {
-  /** Pass your SVG logo or image */
+  
   logo?: React.ReactNode;
 };
 
@@ -19,39 +19,42 @@ export default function ComingSoon({ logo }: Props) {
       <main className="relative max-w-xl w-full text-center">
         {/* ===== LOGO ===== */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-12 flex justify-center"
-        >
-          {logo ? (
-            <div className="h-16 flex items-center justify-center">
-              
-            </div>
-          ) : (
-            <div className="text-center">
-              <div className="text-3xl font-semibold tracking-wide text-[#1a242f]">
-                ambridge
-              </div>
-              <div className="text-xs uppercase tracking-[0.35em] text-[#A2D8B2] mt-1">
-                ceramics
-              </div>
-            </div>
-          )}
-        </motion.div>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="mb-12 flex justify-center"
+>
+  <img
+    src="/LOGO SVG.svg"
+    alt="Ambridge Ceramics"
+    className="h-14 md:h-16 w-auto"
+  />
+</motion.div>
+        {/* ===== PREMIUM HEADING ===== */}
+{/* ===== PREMIUM HEADING ===== */}
+<motion.h1
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+  className="
+    text-[44px] md:text-[60px]
+    leading-[1.05]
+    tracking-[-0.02em]
+    text-[#1f2933]
+    mb-6
+  "
+>
+  <span className="block text-[0.42em] font-medium tracking-[0.18em] uppercase text-[#7a8680] mb-3">
+    Our new website is
+  </span>
 
-        {/* ===== HEADING ===== */}
-        <motion.h1
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.05 }}
-          className="text-[40px] md:text-[52px] font-light text-[#1a242f] leading-[1.15] mb-6"
-        >
-          Our new website is
-          <span className="block font-semibold text-[#2d5a43] mt-2">
-            coming soon
-          </span>
-        </motion.h1>
+  <span className="relative inline-block font-semibold text-[#254c39]">
+    Coming Soon
+
+    {/* premium underline */}
+    <span className="absolute left-1/2 -translate-x-1/2 -bottom-3 h-[2px] w-[72%] bg-[#254c39]/25 rounded-full" />
+  </span>
+</motion.h1>
 
       </main>
     </div>
