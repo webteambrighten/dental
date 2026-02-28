@@ -65,14 +65,12 @@ export default function ComingSoon({ logo }: Props) {
           className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           {/* SEND A CASE button */}
-          <button
-            onClick={() => {
-              console.log("Send a case clicked");
-            }}
-            className="px-8 py-3 rounded-lg bg-white/80 backdrop-blur-sm border border-white/50 shadow-md text-[#254c39] font-semibold text-sm uppercase tracking-wider hover:bg-[#a2d8b2] hover:text-white hover:border-[#254c39] transition-all duration-300 w-full sm:w-auto"
+          <a
+            href="https://www.portal.ambridgeceramics.com/authentication/login"
+            className="px-8 py-3 rounded-lg bg-white/80 backdrop-blur-sm border border-white/50 shadow-md text-[#254c39] font-semibold text-sm uppercase tracking-wider hover:bg-[#a2d8b2] hover:text-white hover:border-[#254c39] transition-all duration-300 w-full sm:w-auto inline-block text-center"
           >
             SEND A CASE
-          </button>
+          </a>
 
           {/* SEND AN EMAIL button */}
           <a
