@@ -76,7 +76,7 @@ export default function ComingSoon({ logo }: Props) {
 
           {/* SEND AN EMAIL button */}
           <a
-            href="mailto:writer987@gmail.com"
+            href="mailto: info@ambridgeceramics.com"
             className="px-8 py-3 rounded-lg bg-white/80 backdrop-blur-sm border border-white/50 shadow-md text-[#254c39] font-semibold text-sm uppercase tracking-wider hover:bg-[#a2d8b2] hover:text-white hover:border-[#254c39] transition-all duration-300 w-full sm:w-auto inline-block text-center"
           >
             SEND AN EMAIL
